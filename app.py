@@ -12,7 +12,8 @@ logging.basicConfig(level=logging.DEBUG)
 
 # Load the trained CatBoost model
 catboost_model = catboost.CatBoostClassifier()
-catboost_model.load_model(r"D:\FINAL_MINDMETRICS\final\model\catboost_model.cbm")
+catboost_model.load_model("model/catboost_model.cbm")
+
 
 # Define categorical mappings for depression prediction
 categorical_mappings = {
